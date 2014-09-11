@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iOS pixel sizes</title>
+		<style>
+			.device {
+				position: absolute;
+				border: 1px solid black;
+				left: 22px;
+				top: 22px;
+			}
+			.inner {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.tag {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				background-color: #bbb;
+				line-height: 150%;
+				padding: 0;
+			}
+			.tag span {
+				background-color: #ddd;
+				padding: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='device' style='height:320px;width:480px'><div class='inner'><div class='tag'>iPhone <span>320x480</span></div></div></div>
+		<div class='device' style='height:320px;width:568px;'><div class='inner'><div class='tag' style='max-width:82px'>iPhone 5<br /><span>320x568</span></div></div></div>
+		<div class='device' style='height:375px;width:667px'><div class='inner'><div class='tag'>iPhone 6 <span>375x667</span></div></div></div>
+		<div class='device' style='height:414px;width:736px'><div class='inner'><div class='tag'>iPhone 6+ <span>414x736</span></div></div></div>
+		<div class='device' style='height:768px;width:1024px'><div class='inner'><div class='tag'>iPad <span>768x1024</span></div></div></div>
+	</body>
+</html>
